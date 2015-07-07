@@ -28,7 +28,7 @@
 *.app
 
 
-# Visual Studio File
+# Visual Studio Files
 *.vcxproj
 *.log
 *.filters
