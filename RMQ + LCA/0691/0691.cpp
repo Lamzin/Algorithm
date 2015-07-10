@@ -16,7 +16,7 @@ int n, m, u, v, ans;
 int rmq[SIZE][lnSIZE], vect[SIZE];
 int xx, yy, k;
 
-void RMQPreproccesing();
+void RMQPreprocessing();
 int RMQ(int l, int r);
 
 int main(){
@@ -25,7 +25,7 @@ int main(){
 	for (int i = 1; i < n; i++)
 		vect[i] = (23 * vect[i - 1] + 21563) % 16714589;
 
-	RMQPreproccesing();
+	RMQPreprocessing();
 
 	RMQ(0, 1);
 
@@ -41,7 +41,7 @@ int main(){
 	return 0;
 }
 
-void RMQPreproccesing(){
+void RMQPreprocessing(){
 	for (int i = 0; i < n; i++) rmq[i][0] = i;
 
 	for (int j = 1; (1 << j) <= n; j++){
